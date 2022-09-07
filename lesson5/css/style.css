@@ -21,10 +21,10 @@ button {
 }
 
 .btn-cart {
-    background-color: #fafafa;
+    background-color: black;
     padding: 10px 20px;
     border: 1px solid transparent;
-    color: #2f2a2d;
+    color: white;
     border-radius: 5px;
     transition: all ease-in-out .4s;
     cursor: pointer;
@@ -47,9 +47,9 @@ button {
 
 
 .btn-cart:hover {
-    background-color: black;
+    background-color: grey;
     border-color: #fafafa;
-    color: #fafafa;
+    color: white;
 
 }
 
@@ -82,7 +82,7 @@ p {
 
 .product-item__title {
     text-align: center;
-    font-size: 45px;
+    font-size: 20px;
     margin: 0 auto 20px;
 }
 
@@ -93,9 +93,9 @@ p {
 
 .product-item__price {
     text-align: center;
-    font-size: 40px;
-    font-weight: 900;
-    color: #861e49;
+    font-size: 15px;
+    font-weight: 300;
+    color: black;
 }
 
 .product-item__btn {
@@ -130,6 +130,7 @@ img {
 }
 
 .cart-block {
+    color: black;
     position: absolute;
     border-radius: 10px 10px 10px 10px;
     background-color: whitesmoke;
