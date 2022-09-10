@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input id="name" type="text" required placeholder="ФИО"><br>
+        <br>
+        <input id="tel" type="tel" required placeholder="+7(000)000-0000"><br>
+        <br>
+        <input id="email" type="email" required placeholder="Email"><br>
+        <br>
+        <textarea style="resize: none;" id="text" cols="30" rows="10" required="required"
+            placeholder="Любой текст"></textarea><br>
+        <br>
+        <button>Отправить</button>
+    </form>
+    <script>
+        let formEl = document.querySelector('form');
+        let nameEl = document.getElementById('name');
+        let telEl = document.getElementById('tel');
+        let emailEl = document.getElementById('email');
+        let textEl = document.getElementById('text');
+
+        var nameRule = /^[a-zа-яё]{3,16}$/i;
+        var telRule = /^\+7\([0-9]{3}\)[0-9]{3}\-[[0-9]{4}/;
+        var emailRule = /^\w+@\w+\.\w{2,4}/i;
+
+        formEl.addEventListener('submit', event => {
+            debugger
+            if (!nameRule.test(nameEl.value)) {
+                nameEl.style.borderColor = 'red';
+                alert('В имени допустимы только буквы');
+                event.preventDefault();
+            } else if (!telRule.test(telEl.value)) {
+                telEl.style.borderColor = 'red';
+                alert('Введите телефон в формате +7(000)000-0000');
+                event.preventDefault();
+            } else if (!emailRule.test(emailEl.value)) {
+                emailEl.style.borderColor = 'red';
+                alert('Введите eMail в формате mail@mail.ru');
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+
+</html>

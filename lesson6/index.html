@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="hidden">
+    <div id="app">
+        <header>
+            <div class="logo">E-shop</div>
+            <search></search>
+            <button class="btn-basket btn-cart" type="button" @click="showBasket = !showBasket">Корзина</button>
+            <basket :basket-goods="basketGoods" :stub-img="stubImg" :show-basket="showBasket"></basket>
+            <!--<div class="cart-block" v-show="showBasket">
+                <h1 v-if="!basketGoods.length">Cart is empty</h1>
+                <div class="basket__basket-item basket-item" v-for="cart of basketGoods" :key="cart.id_product">
+                    <img class="basket-item__img" :src="cart.img" :alt="cart.product_name" height="100px"
+                        v-if="cart.img">
+                    <img class="basket-item__img" :src="stubImg" :alt="cart.product_name" height="100px" v-else>
+                    <div class="basket-item__wrp">
+                        <h3 class="basket-item__title">{{cart.product_name}}</h3>
+                        <p class="basket-item__price">Цена за шт.: {{cart.price}} $</p>
+                        <p class="basket-item__volume">Количество: {{cart.quantity}} шт.</p>
+                        <p class="basket-item__totalPrice">Общая цена: {{cart.price * cart.quantity}} $</p>
+                    </div>
+                    <button class="basket-item__btn btn-delete" type="button" @click="deleteProduct(cart)">X</button>
+                </div>
+                <button class="basket__btn-clear btn-cart" type="button" v-if="basketGoods.length"
+                    @click="clearBasket()">Clear cart</button>
+            </div>-->
+        </header>
+
+        <main>
+            <error></error>
+            <products :filtered="filtered" :stub-img="stubImg" :stub-text="stubText" @add-product="addProduct">
+            </products>
+            <!--<div class="products">
+                <h1 v-if="!filtered.length">Товар не найден</h1>
+                <div class="product-item" v-for="product of filtered" :key="product.id_product">
+                    <img class="product-item__img" :src="product.img" :alt="product.product_name" height="300px"
+                        v-if="product.img">
+                    <img class="product-item__img" :src="stubImg" :alt="product.product_name" height="300px" v-else>
+                    <h3 class="product-item__title">{{product.product_name}}</h3>
+                    <p class="product-item__price">{{product.price}} </p>
+                    <button class="btn-cart" type="button" @click="addProduct(product)">Купить</button>
+                </div>
+            </div>-->
+        </main>
+    </div>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+        integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/error.js"></script>
+    <script src="js/searchComponent.js"></script>
+    <script src="js/productsComponent.js"></script>
+    <script src="js/basketComponent.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
