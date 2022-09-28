@@ -1,0 +1,44 @@
+[
+  {
+    "id_product": 1,
+    "img": "./img/1.jpg",
+    "product_name": "alexander mcqueen",
+    "text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "price": 52
+  },
+  {
+    "id_product": 2,
+    "img": "./img/2.jpg",
+    "product_name": "ellery x m'o capsule",
+    "text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "price": 34
+  },
+  {
+    "id_product": 3,
+    "img": "./img/3.jpg",
+    "product_name": "paul smith",
+    "text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "price": 44
+  },
+  {
+    "id_product": 4,
+    "img": "./img/4.jpg",
+    "product_name": "vivienne westwood",
+    "text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "price": 37
+  },
+  {
+    "id_product": 5,
+    "img": "./img/5.jpg",
+    "product_name": "victoria bekham",
+    "text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "price": 29
+  },
+  {
+    "id_product": 6,
+    "img": "./img/6.jpg",
+    "product_name": "burberry",
+    "text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "price": 15
+  }
+]
