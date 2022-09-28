@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/rerset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="container header__wrp">
+                <div class="header__flex">
+                    <a class="header__logo" href="#">
+                        <img src="./img/logo.png" alt="icon">
+                    </a>
+                    <filter-el></filter-el>
+                </div>
+                <ul class="header__list">
+                    <li class="header__item">
+                        <button class="header__button">
+                            <svg class="header__burger-icon" width="32" height="23" viewBox="0 0 32 23"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" />
+                            </svg>
+                        </button>
+                        <nav class="header__nav">
+                            <h2 class="header__title">menu</h2>
+                            <ul class="header__nav-list">
+                                <li class="header__nav-item">
+                                    <a class="nav-sub-item__title" href="./catalog.html">man</a>
+                                    <ul class="nav-sub-item__list">
+                                        <li class="nav-sub-item__item">
+                                            <a class="nav-sub-item__item" href="./catalog.html">Accessories</a>
+                                        </li>
+                                        <li class="nav-sub-item__item">
+                                            <a class="nav-sub-item__item" href="#">Bags</a>
+                                        </li>
+                                        <li class="nav-sub-item__item">
+                                            <a class="nav-sub-item__item" href="#">Denim</a>
+                                        </li>
+                                        <li class="nav-sub-item__item">
+                                            <a class="nav-sub-item__item" href="#">T-Shirts</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__nav-item">
+                                    <h3 class="nav-sub-item__title" href="#">woman</h3>
+                                    <ul>
+                                        <li class="nav-sub-item__item">
+                                            <a class="nav-sub-item__item" href="#">Accessories</a>
+                                        </li>
+                                        <li class="nav-sub-item__item">
+                                            <a class="nav-sub-item__item" href="#">Jackets & Coats</a>
+                                        </li>
+                                        <li class="nav-sub-item__item">
+                                            <a class="nav-sub-item__item" href="#">Polos</a>
+                                        </li>
+                                        <li class="nav-sub-item__item">
+                                            <a class="nav-sub-item__item" href="#">T-Shirts</a>
+                                        </li>
+                                        <li class="nav-sub-item__item">
+                                            <a class="nav-sub-item__item" href="#">Shirts</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__nav-item">
+                                    <h3 class="nav-sub-item__title" href="#">kids</h3>
+                                    <ul>
+                                        <li class="nav-sub-item__item">
+                                            <a class="nav-sub-item__item" href="#">Accessories</a>
+                                        </li>
+                                        <li class="nav-sub-item__item">
+                                            <a class="nav-sub-item__item" href="#">Jackets & Coats</a>
+                                        </li>
+                                        <li class="nav-sub-item__item">
+                                            <a class="nav-sub-item__item" href="#">Polos</a>
+                                        </li>
+                                        <li class="nav-sub-item__item">
+                                            <a class="nav-sub-item__item" href="#">T-Shirts</a>
+                                        </li>
+                                        <li class="nav-sub-item__item">
+                                            <a class="nav-sub-item__item" href="#">Shirts</a>
+                                        </li>
+                                        <li class="nav-sub-item__item">
+                                            <a class="nav-sub-item__item" href="#">Bags</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link">
+                            <img src="./img/profile.svg" alt="profile">
+                        </a>
+                    </li>
+                    <cart ref="cart"></cart>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <error ref="error"></error>
+            <section class="brand">
+                <div class="container">
+                    <div class="brand__centr">
+                        <img class="brand__img" src="./img/main-man.png" alt="main-man">
+                        <div class="brand__title-wrp">
+                            <h1 class="brand__title">the brend <span class="brand__subtitle">of luxerious <span
+                                        class="brand__subtitle-pink">fashion</span></span></h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sales">
+                <div class="container">
+                    <h2 class="visually-hidden" aria-hidden="true" tabindex="-1">sales</h2>
+                    <ul class="sales__list">
+                        <li class="sales__item sales__item--woman">
+                            <p class="sales__text">30% off</p>
+                            <h3 class="sales__title">for woman</h3>
+                        </li>
+                        <li class="sales__item sales__item--man">
+                            <p class="sales__text">hot deal</p>
+                            <h3 class="sales__title">for man</h3>
+                        </li>
+                        <li class="sales__item sales__item--kids">
+                            <p class="sales__text">new arrivals</p>
+                            <h3 class="sales__title">for kids</h3>
+                        </li>
+                        <li class="sales__item sales__item--shoes">
+                            <p class="sales__text">luxirous & trendy</p>
+                            <h3 class="sales__title">accesories</h3>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <products ref="products">
+            </products>
+            </section>
+            <section class="aside">
+                <div class="container">
+                    <ul class=" aside__list">
+                        <li class="aside__item">
+                            <img class="aside__icon" src="./img/truck.svg" alt="truck">
+                            <h3 class="aside__title">Free Delivery</h3>
+                            <p class="aside__text">Worldwide delivery on all. Authorit tively morph next-generation
+                                innov
+                                tion
+                                with extensive
+                                models.</p>
+                        </li>
+                        <li class="aside__item">
+                            <img class="aside__icon" src="./img/percent.svg" alt="percent">
+                            <h3 class="aside__title">Sales & discounts</h3>
+                            <p class="aside__text">Worldwide delivery on all. Authorit tively morph next-generation
+                                innov
+                                tion
+                                with extensive
+                                models.</p>
+                        </li>
+                        <li class="aside__item">
+                            <img class="aside__icon" src="./img/crown.svg" alt="crown">
+                            <h3 class="aside__title">Quality assurance</h3>
+                            <p class="aside__text">Worldwide delivery on all. Authorit tively morph next-generation
+                                innov
+                                tion
+                                with extensive
+                                models.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__main">
+                <div class="container">
+                    <div class="footer__main-hlp">
+                        <div class="girl__face">
+                            <img class="footer__img" src="./img/girl-face.png" alt="girl-face">
+                            <p class="footer__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                                purus
+                                condimentum“</p>
+                        </div>
+                        <div class="subscribe">
+                            <h4 class="subscribe__title">subscribe</h4>
+                            <p class="subscribe__text">for our newletter and promotion</p>
+                            <div class="subscribe__sub">
+                                <form action="#">
+                                    <label class="subscribe__label">
+                                        <span class="visually-hidden">email</span>
+                                        <input class="subscribe__email" type="email" required
+                                            placeholder="   Enter Your Email">
+                                    </label>
+                                    <button class="subscribe__button" type="submit">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__arr-social">
+                <div class="container footer__arr-social-wrp">
+                    <div>
+                        <p class="footer__arr-social-text">2022 © All rights reserved</p>
+                    </div>
+                    <ul>
+                        <img src="./img/pinterest.png" alt="pinterest">
+                        <img src="./img/twitter.png" alt="twitter">
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/ProductComponent.js"></script>
+    <script src="js/CartComponent.js"></script>
+    <script src="js/FilterComp.js"></script>
+    <script src="js/ErrorComp.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
